@@ -1,3 +1,3 @@
-# Date Counter with React
+# Quiz App with React
 
 - implement useReducer for state management

@@ -97,7 +97,9 @@ export default function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(`http://localhost:5000/questions`);
+        const response = await fetch(
+          `https://my-json-server.typicode.com/subarnabsadhukhan/react-quiz-app/questions`
+        );
         const data = await response.json();
         dispatch({ type: "FETCH_SUCCESS", payload: data });
       } catch (error) {
